@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Tutorial</title>
+    <script>
+        console.log("This is my first JS tutorial");
+        alert("Welcome to my JS tutorial");
+
+        let firstName = "Silias";
+        let width = 10;
+        let height = 20;
+        let isRaining = true || false;
+        const isFixed = 20;
+        firstName = "Odion";
+        let lastName = undefined;
+        lastName = "Adodo";
+        let middleName = null;
+        middleName = "Silias";
+        console.log(lastName)
+
+        let id1 = Symbol(1);
+        let id2 = Symbol(1);
+
+        let bigNumber = 9876432112n;
+        let carMake = "Toyota";
+        let carModel = "Camry";
+        let carYear = 2020;
+        let carId = "make";
+
+        let car = {
+            make: "Toyota",
+            model: "Camry",
+            year: 2020,
+        };
+        console.log(car[carId])// false
+        let colors = ["red", "blue", "green"];
+        console.log(colors[1]) // red
+        const names = [
+            {firstName: "Silias", lastName: "Adodo"},
+            {firstName: "Odion", lastName: "Adodo"},
+            {firstName: "Simeon", lastName: "Adodo"}
+        ];
+        console.log(names);
+
+        let greeting = null;
+        function greetUser() {
+            greeting = "Hello " + firstName + " " + lastName;
+        }
+        greetUser();
+        console.log("--------->", greeting);
+
+        let age = 18;
+        console.log(typeof age); // number
+        
+
+        //Assignment on functions//
+        //homework guys
+        //write 3 functions namely getName, getSchoolInfo, getHobbies
+        //return your name as a string
+        //returns your school info
+        //returns your hobbies
+        
+        let namex = "Silias Odion Adodo";
+        let nameOfSchool = "AltSchool Africa";
+        let hobbies = [
+            {firstHobby: "Playing Football"},
+            {secondHobby: "Watching Movies"},
+            {thirdHobby: "Reading Books"}
+        ]
+        function getName() {
+            return ("My names are" + " " + namex);
+        }
+        getName();
+        console.log(getName());
+
+        function getSchoolInfo() {
+            return ("Am a student of" + " " + nameOfSchool + " " + "under the school of Engineering studying Software Engineering under the cloud computing track");
+        }
+        getSchoolInfo();
+        console.log(getSchoolInfo());
+
+        function getHobbies() 
+            {
+                return ([hobbies]);
+            }
+        getHobbies(hobbies);
+        console.log(getHobbies());
+        //End of assignment on functions//
+
+    </script>
+</head>
+<body>
+    Hello this is my first JS tutorial
+
+</body>
+</html>
