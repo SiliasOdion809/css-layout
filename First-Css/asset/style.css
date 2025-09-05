@@ -85,3 +85,14 @@ nav a {
 /* .flex-item:nth-child(2) {
     flex: 2;
 } */
+
+/*styling on mobile devices*/
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+}
